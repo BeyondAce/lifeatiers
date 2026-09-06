@@ -1,0 +1,20 @@
+{
+  "serverName": "LifeaTiers",
+  "ranks": [
+    { "name": "Combat Grandmaster", "icon": "combat_grandmaster.webp", "minPoints": 400, "color": "#ff4444" },
+    { "name": "Combat Master",      "icon": "combat_master.webp",      "minPoints": 250, "color": "#ff8800" },
+    { "name": "Combat Ace",         "icon": "combat_ace.svg",          "minPoints": 100, "color": "#ffdd00" },
+    { "name": "Combat Specialist",  "icon": "combat_specialist.svg",   "minPoints": 50,  "color": "#44ccff" },
+    { "name": "Combat Cadet",       "icon": "combat_cadet.svg",        "minPoints": 20,  "color": "#aaaaff" },
+    { "name": "Combat Novice",      "icon": "combat_novice.svg",       "minPoints": 10,  "color": "#88ff88" },
+    { "name": "Rookie",             "icon": "rookie.svg",              "minPoints": 0,   "color": "#aaaaaa" }
+  ],
+  "gamemodes": [
+    { "id": "overall",  "name": "Overall",  "icon": "lifea.png"    },
+    { "id": "sword",    "name": "Sword",    "icon": "sword.png"    },
+    { "id": "uhc",      "name": "UHC",      "icon": "uhc.png"      },
+    { "id": "nethop",   "name": "NethOP",   "icon": "nethpot.png"  },
+    { "id": "smp",      "name": "SMP",      "icon": "smp.png"      },
+    { "id": "mace",     "name": "Mace",     "icon": "mace.png"     }
+  ]
+}

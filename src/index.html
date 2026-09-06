@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LifeaTiers - Rankings</title>
+  <link rel="icon" href="/assets/lifea.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <img src="/assets/lifea.png" alt="LifeaTiers" class="logo" />
+      <h1 onclick="goToRankings()" style="cursor:pointer">LifeaTiers</h1>
+      <nav class="header-nav">
+        <a href="#"><img src="/assets/home.svg" alt="" />Home</a>
+        <a href="#" onclick="goToRankings();return false;"><img src="/assets/rankings.svg" alt="" />Rankings</a>
+        <a href="https://discord.gg/NWkh47A7ja" target="_blank" class="discord-btn"><img src="/assets/discord.svg" alt="" />Discord</a>
+      </nav>
+      <div class="search-bar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" placeholder="Search players..." />
+      </div>
+    </div>
+  </header>
+  <nav id="tabs"></nav>
+
+  <main>
+    <section id="leaderboard"></section>
+  </main>
+
+  <div id="profile-modal" class="modal-overlay" style="display:none">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeProfile()">✕</button>
+      <div class="profile-avatar">
+        <img id="profile-skin" src="" alt="" onerror="this.src='https://nmsr.nickac.dev/bust/Steve'" />
+      </div>
+      <div id="profile-name" class="profile-name"></div>
+      <div id="profile-rank" class="profile-rank-badge"></div>
+      <div id="profile-region" class="profile-region"></div>
+      <a id="profile-namemc" class="profile-namemc" target="_blank"></a>
+      <div class="profile-section-title">POSITION</div>
+      <div id="profile-position" class="profile-position-box"></div>
+      <div class="profile-section-title">TIERS</div>
+      <div id="profile-tiers" class="profile-tiers-box"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

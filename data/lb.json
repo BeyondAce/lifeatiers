@@ -1,0 +1,12 @@
+[
+  {
+    "name": "PureMortic",
+    "region": "ME",
+    "cracked": false,
+    "gamemodes": {
+      "mace": "LT3",
+      "smp": "LT4",
+      "sword": "HT4"
+    }
+  }
+]
