@@ -24,5 +24,13 @@
     "gamemodes": {
       "mace": "LT3"
     }
+  },
+  {
+    "name": "7xlz",
+    "region": "ME",
+    "cracked": false,
+    "gamemodes": {
+      "nethop": "LT3"
+    }
   }
 ]
