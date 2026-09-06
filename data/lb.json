@@ -16,5 +16,13 @@
     "gamemodes": {
       "sword": "LT5"
     }
+  },
+  {
+    "name": "SeriouslyHadi",
+    "region": "ME",
+    "cracked": false,
+    "gamemodes": {
+      "mace": "LT3"
+    }
   }
 ]
