@@ -8,5 +8,13 @@
       "smp": "LT4",
       "sword": "HT4"
     }
+  },
+  {
+    "name": "ShenzoXS",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "sword": "LT5"
+    }
   }
 ]
