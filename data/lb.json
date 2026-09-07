@@ -48,5 +48,13 @@
     "gamemodes": {
       "mace": "HT4"
     }
+  },
+  {
+    "name": "ra_ichu",
+    "region": "ME",
+    "cracked": false,
+    "gamemodes": {
+      "mace": "HT3"
+    }
   }
 ]
