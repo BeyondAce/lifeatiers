@@ -82,5 +82,13 @@
     "gamemodes": {
       "mace": "LT3"
     }
+  },
+  {
+    "name": "Its_Mysterious",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "sword": "HT5"
+    }
   }
 ]
