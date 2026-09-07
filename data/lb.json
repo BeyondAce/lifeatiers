@@ -54,7 +54,8 @@
     "region": "ME",
     "cracked": false,
     "gamemodes": {
-      "mace": "HT3"
+      "mace": "HT3",
+      "sword": "LT3"
     }
   },
   {
