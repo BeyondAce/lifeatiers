@@ -74,5 +74,13 @@
     "gamemodes": {
       "sword": "HT5"
     }
+  },
+  {
+    "name": "Shehriyargamer",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "mace": "LT3"
+    }
   }
 ]
