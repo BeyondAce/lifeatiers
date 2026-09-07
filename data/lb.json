@@ -56,5 +56,13 @@
     "gamemodes": {
       "mace": "HT3"
     }
+  },
+  {
+    "name": "spacerI",
+    "region": "ME",
+    "cracked": false,
+    "gamemodes": {
+      "sword": "LT3"
+    }
   }
 ]
