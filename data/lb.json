@@ -22,7 +22,8 @@
     "region": "ME",
     "cracked": false,
     "gamemodes": {
-      "mace": "LT3"
+      "mace": "LT3",
+      "sword": "LT4"
     }
   },
   {
