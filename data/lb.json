@@ -32,5 +32,13 @@
     "gamemodes": {
       "nethop": "LT3"
     }
+  },
+  {
+    "name": "Ozraaa",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "mace": "HT4"
+    }
   }
 ]
