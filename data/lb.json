@@ -66,5 +66,13 @@
       "sword": "LT3",
       "mace": "HT3"
     }
+  },
+  {
+    "name": "TaurusBaby",
+    "region": "ME",
+    "cracked": false,
+    "gamemodes": {
+      "sword": "HT5"
+    }
   }
 ]
