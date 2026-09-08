@@ -99,5 +99,13 @@
     "gamemodes": {
       "mace": "LT4"
     }
+  },
+  {
+    "name": "XoxoKnight",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "nethop": "HT4"
+    }
   }
 ]
