@@ -91,5 +91,13 @@
     "gamemodes": {
       "sword": "HT5"
     }
+  },
+  {
+    "name": "_CrimsonGuyXD",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "mace": "LT4"
+    }
   }
 ]
