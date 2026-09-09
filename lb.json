@@ -1,0 +1,135 @@
+[
+  {
+    "name": "PureMortic",
+    "region": "ME",
+    "cracked": false,
+    "gamemodes": {
+      "mace": "LT3",
+      "smp": "LT4",
+      "sword": "HT4"
+    }
+  },
+  {
+    "name": "ShenzoXS",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "sword": "LT5"
+    }
+  },
+  {
+    "name": "SeriouslyHadi",
+    "region": "ME",
+    "cracked": false,
+    "gamemodes": {
+      "mace": "LT3",
+      "sword": "LT4"
+    }
+  },
+  {
+    "name": "7xlz",
+    "region": "ME",
+    "cracked": false,
+    "gamemodes": {
+      "nethop": "LT3"
+    }
+  },
+  {
+    "name": "Ozraaa",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "mace": "HT4"
+    }
+  },
+  {
+    "name": "MrFury__",
+    "region": "ME",
+    "cracked": false,
+    "gamemodes": {
+      "mace": "HT4"
+    }
+  },
+  {
+    "name": "ra_ichu",
+    "region": "ME",
+    "cracked": false,
+    "gamemodes": {
+      "mace": "HT3",
+      "sword": "LT3"
+    }
+  },
+  {
+    "name": "spacerI",
+    "region": "ME",
+    "cracked": false,
+    "gamemodes": {
+      "sword": "LT3",
+      "mace": "HT3"
+    }
+  },
+  {
+    "name": "TaurusBaby",
+    "region": "ME",
+    "cracked": false,
+    "gamemodes": {
+      "sword": "HT5"
+    }
+  },
+  {
+    "name": "Shehriyargamer",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "mace": "LT3"
+    }
+  },
+  {
+    "name": "Its_Mysterious",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "sword": "HT5"
+    }
+  },
+  {
+    "name": "_CrimsonGuyXD",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "mace": "LT4"
+    }
+  },
+  {
+    "name": "XoxoKnight",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "nethop": "HT4"
+    }
+  },
+  {
+    "name": "Flagshouter",
+    "region": "ME",
+    "cracked": false,
+    "gamemodes": {
+      "smp": "HT5"
+    }
+  },
+  {
+    "name": "BloodVapourzzz_",
+    "region": "ME",
+    "cracked": false,
+    "gamemodes": {
+      "smp": "HT5"
+    }
+  },
+  {
+    "name": "S0me1Y0uKn0w",
+    "region": "ME",
+    "cracked": false,
+    "gamemodes": {
+      "smp": "LT4"
+    }
+  }
+]
