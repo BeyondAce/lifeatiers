@@ -107,5 +107,29 @@
     "gamemodes": {
       "nethop": "HT4"
     }
+  },
+  {
+    "name": "Flagshouter",
+    "region": "ME",
+    "cracked": false,
+    "gamemodes": {
+      "smp": "HT5"
+    }
+  },
+  {
+    "name": "BloodVapourzzz_",
+    "region": "ME",
+    "cracked": false,
+    "gamemodes": {
+      "smp": "HT5"
+    }
+  },
+  {
+    "name": "S0me1Y0uKn0w",
+    "region": "ME",
+    "cracked": false,
+    "gamemodes": {
+      "smp": "LT4"
+    }
   }
 ]
