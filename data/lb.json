@@ -107,5 +107,13 @@
     "gamemodes": {
       "nethop": "HT4"
     }
+  },
+  {
+    "name": "Flagshouter",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "smp": "HT5"
+    }
   }
 ]
