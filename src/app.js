@@ -13,11 +13,11 @@
     NA:"#e05555", EU:"#4ade80", AS:"#f5a623", SA:"#f5d623", AU:"#d5ad80", ME:"#d95c5c"
   };
   const TIER_GROUPS = [
-    { label:"Tier 1", codes:["HT1","LT1"], color:"#fff", bg:"#c9820f", border:"#c9820f", trophy:true },
-    { label:"Tier 2", codes:["HT2","LT2"], color:"#fff", bg:"#3a4455", border:"#3a4455", trophy:true },
-    { label:"Tier 3", codes:["HT3","LT3"], color:"#fff", bg:"#a04a1e", border:"#a04a1e", trophy:true },
-    { label:"Tier 4", codes:["HT4","LT4"], color:null, bg:null, border:null, trophy:false },
-    { label:"Tier 5", codes:["HT5","LT5"], color:null, bg:null, border:null, trophy:false },
+    { label:"Tier 1", codes:["HT1","LT1"], color:"#fff", bg:"#7a4e00", border:"#c9820f", trophy:"tier_1.svg" },
+    { label:"Tier 2", codes:["HT2","LT2"], color:"#fff", bg:"#1a2030", border:"#3a4455", trophy:"tier_2.svg" },
+    { label:"Tier 3", codes:["HT3","LT3"], color:"#fff", bg:"#5a2510", border:"#a04a1e", trophy:"tier_3.svg" },
+    { label:"Tier 4", codes:["HT4","LT4"], color:null, bg:null, border:null, trophy:null },
+    { label:"Tier 5", codes:["HT5","LT5"], color:null, bg:null, border:null, trophy:null },
   ];
 
   const state = { config: null, lb: null, gamemode: "overall", query: "" };
@@ -54,7 +54,10 @@
       .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name));
   }
 
-  function titleFor(pts) {
+  function titleFor(pts, p) {
+    if (p?.special?.title) {
+      return state.config.ranks.find((r) => r.name === p.special.title) ?? state.config.ranks[0];
+    }
     return state.config.ranks.find((r) => pts >= r.minPoints) ?? state.config.ranks.at(-1);
   }
 
@@ -79,13 +82,16 @@
 
     const gmModes = state.config.gamemodes.filter((g) => g.id !== "overall");
     const pts = totalScore(p);
-    const title = titleFor(pts);
+    const title = titleFor(pts, p);
     const rank = overallRank(name);
     const regionNames = { NA:"North America", EU:"Europe", AS:"Asia", ME:"Middle East", SA:"South America", AU:"Australia" };
 
     document.getElementById("profile-skin").src = `https://nmsr.nickac.dev/bust/${encodeURIComponent(name)}`;
     document.getElementById("profile-name").textContent = name;
-    document.getElementById("profile-rank").innerHTML = `<img src="${ASSETS}${title.icon}" alt="" /><span style="color:${title.color}">${title.name}</span>`;
+    document.getElementById("profile-name").className = "profile-name" + (p.special?.glow ? " profile-name--glow" : "");
+    if (!p.special?.glow) document.getElementById("profile-name").style.color = title.color;
+    document.getElementById("profile-rank").innerHTML = `<img src="${ASSETS}${title.icon}" alt="" /><span>${title.name}</span>`;
+    document.getElementById("profile-rank").style.cssText = `--tc:${title.color}; background:color-mix(in srgb,${title.color} 15%,#0e1420); border-color:color-mix(in srgb,${title.color} 40%,transparent); color:${title.color};`;
     document.getElementById("profile-region").textContent = regionNames[p.region] ?? p.region;
 
     const namemc = document.getElementById("profile-namemc");
@@ -98,7 +104,7 @@
     }
 
     document.getElementById("profile-position").innerHTML = `
-      <span class="profile-pos-num">${rank}.</span>
+      <span class="profile-pos-num" title="Overall Placement: #${rank}">${rank}.</span>
       <span>🏆</span>
       <span class="profile-pos-label">OVERALL</span>
       <span class="profile-pos-pts">(${pts} points)</span>`;
@@ -118,9 +124,10 @@
           <span class="tier-badge tier-badge--empty">–</span>
         </div>`;
         const tc = tierColor(t);
-        return `<div class="tier-card">
+        return `<div class="tier-card" title="${weight(t)} points">
           <div class="tier-icon-circle" style="border-color:${tc}; box-shadow:0 0 8px ${tc}55"><img src="${ASSETS}${g.icon}" alt="${g.name}" /></div>
           <span class="tier-badge" style="color:${tc}">${t}</span>
+          <span class="tier-pts">${weight(t)}pts</span>
         </div>`;
       }).join("");
 
@@ -150,11 +157,16 @@
   /* ---------------------------------------------------------- rows */
   function tierCell(gmId, code, gm) {
     if (!code) {
-      return `<span class="tcell tcell--empty" title="${gm.name}: Unranked">
-        <img src="/assets/${gm.icon}" alt="${gm.name}" /><b>—</b></span>`;
+      return `<span class="tcell tcell--empty">
+        <span class="tcell__circle"><img src="/assets/${gm.icon}" alt="${gm.name}" /></span>
+        <b>—</b>
+        <span class="tcell__tip">${gm.name} · Unranked</span></span>`;
     }
-    return `<span class="tcell" style="--tier-c:${tierColor(code)}" title="${gm.name}: ${code}">
-      <img src="/assets/${gm.icon}" alt="${gm.name}" /><b>${code}</b></span>`;
+    const tc = tierColor(code);
+    return `<span class="tcell" style="--tier-c:${tc}">
+      <span class="tcell__circle" style="border-color:${tc};box-shadow:0 0 7px ${tc}66"><img src="/assets/${gm.icon}" alt="${gm.name}" /></span>
+      <b>${code}</b>
+      <span class="tcell__tip">${gm.name} · <b>${code}</b> · ${weight(code)} pts</span></span>`;
   }
 
   function tiersMarkup(p) {
@@ -183,23 +195,23 @@
     els.tbody.innerHTML = allRanked
       .map((p, i) => {
         const rank = i + 1;
-        const title = titleFor(p.score);
+        const title = titleFor(p.score, p);
+        const isGlow = p.special?.glow;
         const rc = regionColor(p.region);
         const posCls = rank <= 3 ? ` pos-${rank}` : "";
         return `<div class="prow" data-player="${p.name}" style="--d:${Math.min(i * 25, 500)}ms;--hover-c:${title.color}">
           <div class="col-banner${posCls}">
             <div class="banner-wrap">
               <div class="banner-bg"></div>
-              <span class="banner-num">${rank}.</span>
+              <span class="banner-num" title="Overall Placement: #${rank}">${rank}.</span>
               ${avatar(p.name)}
             </div>
           </div>
           <span class="prow__id">
-            <span class="prow__name">${p.name}</span>
-            <span class="prow__title" style="--tcolor:${title.color}; color:${title.color}; text-shadow:0 0 12px ${title.color}88">
+            <span class="prow__name${isGlow ? ' prow__name--glow' : ''}">${p.name}</span>
+            <span class="prow__title"${isGlow ? '' : ` style="--tcolor:${title.color}; color:${title.color}"`}>
               <img src="/assets/${title.icon}" alt="" style="width:14px;height:14px;image-rendering:pixelated;vertical-align:-2px" onerror="this.style.display='none'" />
-              <b>${title.name}</b>
-              <span class="sep">•</span>${p.score} points
+              <b>${title.name}</b> <span class="prow__title-pts">(${p.score} points)</span>
             </span>
           </span>
           <span class="prow__region"><span class="rpill" style="--rc:${rc}">${p.region}</span></span>
@@ -225,7 +237,7 @@
         ${buckets.map(({ label, codes, players, color, bg, border, trophy }) => `
           <div class="gm-col">
             <div class="gm-col__head${bg ? '' : ' gm-col__head--plain'}" ${bg ? `style="background:${bg};border-color:${border}"` : ''}>
-              ${trophy ? `<svg class="gm-col__trophy" style="color:${color}" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 2h12v8a6 6 0 0 1-12 0V2ZM4 4H2v4a4 4 0 0 0 4 4v-1A3 3 0 0 1 4 8V4Zm16 0h2v4a4 4 0 0 0-4 4v1a4 4 0 0 0 4-4V4ZM11 16.93V19H8v2h8v-2h-3v-2.07A6.02 6.02 0 0 0 18 11V2H6v9a6.02 6.02 0 0 0 5 5.93Z"/></svg>` : ''}
+              ${trophy ? `<img class="gm-col__trophy" src="/assets/${trophy}" alt="" />` : ''}
               <span class="gm-col__label" ${color ? `style="color:${color}"` : ''}>${label}</span>
             </div>
             <div class="gm-col__players">
@@ -233,11 +245,18 @@
                 ? `<span class="gm-col__empty">—</span>`
                 : players.map((p) => {
                     const rc = regionColor(p.region);
-                    return `<div class="gm-pcard" data-player="${p.name}" style="--rc:${rc}">
+                    const code = p.gamemodes?.[state.gamemode];
+                    const isHigh = code?.[0] === "H";
+                    const chev = isHigh
+                      ? `<svg class="gm-pcard__chev gm-pcard__chev--high" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m17 11-5-5-5 5"/><path d="m17 18-5-5-5 5"/></svg>`
+                      : `<svg class="gm-pcard__chev gm-pcard__chev--low" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>`;
+                    const pts = weight(code);
+                    return `<div class="gm-pcard${isHigh ? ' gm-pcard--high' : ' gm-pcard--low'}" data-player="${p.name}" style="--rc:${rc};--tc:${tierColor(code)}" title="${code ?? ''}">
                       <span class="gm-pcard__region">${p.region}</span>
                       <span class="gm-pcard__avatar-wrap">${avatar(p.name, true)}</span>
                       <span class="gm-pcard__name">${p.name}</span>
-                      <svg class="gm-pcard__chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
+                      <span class="gm-pcard__pts">${pts}<span class="gm-pcard__pts-label">pts</span></span>
+                      ${chev}
                     </div>`;
                   }).join("")}
             </div>
