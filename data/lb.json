@@ -18,7 +18,8 @@
       "title": "Combat Ace"
     },
     "gamemodes": {
-      "sword": "LT5"
+      "sword": "LT5",
+      "mace": "LT5"
     }
   },
   {
