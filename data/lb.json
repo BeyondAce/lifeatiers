@@ -144,5 +144,13 @@
     "gamemodes": {
       "nethop": "HT4"
     }
+  },
+  {
+    "name": "santa_clause",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "mace": "LT3"
+    }
   }
 ]
