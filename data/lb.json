@@ -169,5 +169,13 @@
     "gamemodes": {
       "mace": "HT5"
     }
+  },
+  {
+    "name": "_manahil_",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "mace": "LT4"
+    }
   }
 ]
