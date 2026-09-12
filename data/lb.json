@@ -194,5 +194,13 @@
     "gamemodes": {
       "smp": "LT4"
     }
+  },
+  {
+    "name": "NINJA_90",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "mace": "LT4"
+    }
   }
 ]
