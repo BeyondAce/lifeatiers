@@ -78,7 +78,8 @@
     "region": "ME",
     "cracked": false,
     "gamemodes": {
-      "sword": "HT5"
+      "sword": "HT5",
+      "mace": "HT5"
     }
   },
   {
