@@ -177,5 +177,13 @@
     "gamemodes": {
       "mace": "LT4"
     }
+  },
+  {
+    "name": "faridktiger",
+    "region": "ME",
+    "cracked": false,
+    "gamemodes": {
+      "mace": "LT4"
+    }
   }
 ]
