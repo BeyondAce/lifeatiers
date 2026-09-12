@@ -153,5 +153,13 @@
     "gamemodes": {
       "mace": "LT3"
     }
+  },
+  {
+    "name": "Shinro_oni",
+    "region": "ME",
+    "cracked": false,
+    "gamemodes": {
+      "mace": "LT4"
+    }
   }
 ]
