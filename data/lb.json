@@ -13,7 +13,10 @@
     "name": "ShenzoXS",
     "region": "ME",
     "cracked": true,
-    "special": { "glow": true, "title": "Combat Ace" },
+    "special": {
+      "glow": true,
+      "title": "Combat Ace"
+    },
     "gamemodes": {
       "sword": "LT5"
     }
@@ -140,5 +143,19 @@
     "gamemodes": {
       "nethop": "HT4"
     }
+  },
+  {
+    "rank": 0,
+    "username": "ShenzoXS",
+    "title": "",
+    "points": 0,
+    "region": "ME",
+    "premium": false,
+    "tiers": [
+      {
+        "category": "mace",
+        "tier": "LT5"
+      }
+    ]
   }
 ]
