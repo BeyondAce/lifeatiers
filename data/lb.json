@@ -218,5 +218,13 @@
     "gamemodes": {
       "mace": "HT5"
     }
+  },
+  {
+    "name": "1nonlyflame",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "mace": "LT5"
+    }
   }
 ]
