@@ -210,5 +210,13 @@
     "gamemodes": {
       "mace": "HT5"
     }
+  },
+  {
+    "name": "MoonAshar",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "mace": "HT5"
+    }
   }
 ]
