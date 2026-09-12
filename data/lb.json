@@ -186,5 +186,13 @@
     "gamemodes": {
       "mace": "LT4"
     }
+  },
+  {
+    "name": "Straybyte",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "smp": "LT4"
+    }
   }
 ]
