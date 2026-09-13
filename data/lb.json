@@ -242,5 +242,13 @@
     "gamemodes": {
       "smp": "LT3"
     }
+  },
+  {
+    "name": "SharpxWarrior",
+    "region": "ME",
+    "cracked": false,
+    "gamemodes": {
+      "nethop": "LT3"
+    }
   }
 ]
