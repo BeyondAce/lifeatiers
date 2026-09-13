@@ -260,5 +260,13 @@
     "gamemodes": {
       "nethop": "LT3"
     }
+  },
+  {
+    "name": "Nethpot_",
+    "region": "ME",
+    "cracked": false,
+    "gamemodes": {
+      "nethop": "LT3"
+    }
   }
 ]
