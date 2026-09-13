@@ -266,7 +266,8 @@
     "region": "ME",
     "cracked": false,
     "gamemodes": {
-      "nethop": "HT3"
+      "nethop": "HT3",
+      "smp": "LT3"
     }
   }
 ]
