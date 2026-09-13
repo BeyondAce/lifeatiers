@@ -234,5 +234,13 @@
     "gamemodes": {
       "mace": "HT5"
     }
+  },
+  {
+    "name": "Resolvds",
+    "region": "ME",
+    "cracked": false,
+    "gamemodes": {
+      "smp": "LT3"
+    }
   }
 ]
