@@ -226,5 +226,13 @@
     "gamemodes": {
       "mace": "LT5"
     }
+  },
+  {
+    "name": "danidaburd",
+    "region": "ME",
+    "cracked": false,
+    "gamemodes": {
+      "mace": "HT5"
+    }
   }
 ]
