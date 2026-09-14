@@ -269,5 +269,13 @@
       "nethop": "HT3",
       "smp": "LT3"
     }
+  },
+  {
+    "name": "SharpxLegend",
+    "region": "ME",
+    "cracked": false,
+    "gamemodes": {
+      "nethop": "LT3"
+    }
   }
 ]
