@@ -279,5 +279,13 @@
       "nethop": "LT3",
       "smp": "LT3"
     }
+  },
+  {
+    "name": "GlassyCoin59044",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "smp": "HT4"
+    }
   }
 ]
