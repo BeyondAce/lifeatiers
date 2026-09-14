@@ -286,7 +286,8 @@
     "region": "ME",
     "cracked": true,
     "gamemodes": {
-      "smp": "HT4"
+      "smp": "HT4",
+      "nethop": "HT5"
     }
   }
 ]
