@@ -217,7 +217,8 @@
     "region": "ME",
     "cracked": true,
     "gamemodes": {
-      "mace": "LT4"
+      "mace": "LT4",
+      "nethop": "LT4"
     }
   },
   {
