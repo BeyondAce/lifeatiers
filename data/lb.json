@@ -289,5 +289,13 @@
       "smp": "HT4",
       "nethop": "HT5"
     }
+  },
+  {
+    "name": "Noat",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "nethop": "LT5"
+    }
   }
 ]
