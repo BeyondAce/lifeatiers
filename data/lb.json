@@ -305,5 +305,13 @@
     "gamemodes": {
       "nethop": "HT4"
     }
+  },
+  {
+    "name": "Lfriod",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "nethop": "HT5"
+    }
   }
 ]
