@@ -313,5 +313,13 @@
     "gamemodes": {
       "nethop": "HT5"
     }
+  },
+  {
+    "name": "UmbryStorm",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "mace": "LT4"
+    }
   }
 ]
