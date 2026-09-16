@@ -129,7 +129,8 @@
     "region": "ME",
     "cracked": false,
     "gamemodes": {
-      "smp": "HT5"
+      "smp": "HT5",
+      "nethop": "LT4"
     }
   },
   {
