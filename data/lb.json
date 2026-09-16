@@ -303,7 +303,8 @@
     "region": "ME",
     "cracked": true,
     "gamemodes": {
-      "nethop": "HT4"
+      "nethop": "HT4",
+      "mace": "HT4"
     }
   },
   {
