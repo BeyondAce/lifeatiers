@@ -297,5 +297,13 @@
     "gamemodes": {
       "nethop": "LT5"
     }
+  },
+  {
+    "name": "phromellow",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "nethop": "HT4"
+    }
   }
 ]
