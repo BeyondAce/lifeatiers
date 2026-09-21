@@ -339,5 +339,13 @@
     "gamemodes": {
       "mace": "LT5"
     }
+  },
+  {
+    "name": "pnd_x",
+    "region": "ME",
+    "cracked": false,
+    "gamemodes": {
+      "mace": "LT4"
+    }
   }
 ]
