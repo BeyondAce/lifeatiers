@@ -347,5 +347,13 @@
     "gamemodes": {
       "mace": "LT4"
     }
+  },
+  {
+    "name": "xx5",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "mace": "LT4"
+    }
   }
 ]
