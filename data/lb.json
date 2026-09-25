@@ -355,5 +355,13 @@
     "gamemodes": {
       "mace": "LT4"
     }
+  },
+  {
+    "name": "NotVileFr",
+    "region": "ME",
+    "cracked": false,
+    "gamemodes": {
+      "mace": "LT5"
+    }
   }
 ]
