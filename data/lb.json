@@ -395,5 +395,13 @@
     "gamemodes": {
       "mace": "HT5"
     }
+  },
+  {
+    "name": "4kmybeloved",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "mace": "LT4"
+    }
   }
 ]
