@@ -387,5 +387,13 @@
     "gamemodes": {
       "mace": "LT4"
     }
+  },
+  {
+    "name": "physso_duck",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "mace": "HT5"
+    }
   }
 ]
