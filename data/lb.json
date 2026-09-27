@@ -371,5 +371,13 @@
     "gamemodes": {
       "mace": "LT4"
     }
+  },
+  {
+    "name": "Densho_XD",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "mace": "LT5"
+    }
   }
 ]
