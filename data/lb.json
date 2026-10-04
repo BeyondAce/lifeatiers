@@ -411,5 +411,13 @@
     "gamemodes": {
       "nethop": "LT3"
     }
+  },
+  {
+    "name": "newterminal",
+    "region": "ME",
+    "cracked": false,
+    "gamemodes": {
+      "nethop": "LT3"
+    }
   }
 ]
