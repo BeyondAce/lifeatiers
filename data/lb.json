@@ -403,5 +403,13 @@
     "gamemodes": {
       "mace": "LT4"
     }
+  },
+  {
+    "name": "U91C",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "nethop": "LT3"
+    }
   }
 ]
