@@ -467,5 +467,13 @@
     "gamemodes": {
       "sword": "HT5"
     }
+  },
+  {
+    "name": "Converted_",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "sword": "LT4"
+    }
   }
 ]
