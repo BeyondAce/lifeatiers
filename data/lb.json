@@ -419,5 +419,13 @@
     "gamemodes": {
       "nethop": "LT3"
     }
+  },
+  {
+    "name": "umarbutt",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "mace": "HT5"
+    }
   }
 ]
