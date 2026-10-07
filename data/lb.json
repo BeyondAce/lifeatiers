@@ -443,5 +443,13 @@
     "gamemodes": {
       "sword": "HT5"
     }
+  },
+  {
+    "name": "yrzillow",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "sword": "LT4"
+    }
   }
 ]
