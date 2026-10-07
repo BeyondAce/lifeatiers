@@ -451,5 +451,13 @@
     "gamemodes": {
       "sword": "LT4"
     }
+  },
+  {
+    "name": "AimXReflex",
+    "region": "ME",
+    "cracked": true,
+    "gamemodes": {
+      "sword": "LT4"
+    }
   }
 ]
